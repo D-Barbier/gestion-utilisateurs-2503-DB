@@ -1,0 +1,103 @@
+:root{
+
+    --color1 : #75DDDD;
+    --color2:  #E6C79C;
+    --color3: #235789;
+    --color4: #F2B5D4;
+    --color5: #AB87FF;
+    --color6: white;
+    --color7: black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color3);
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color1);
+}
+
+header img{
+    height: 5rem;
+}
+
+
+
+/* main */
+
+/* table */
+
+.mainTitle{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+#tableRole , #tableUser {
+    margin: auto;
+}
+
+#tableRole tr , #tableRole th , #tableRole td, #tableRole ,
+ #tableUser tr , #tableUser th, #tableUser td, #tableUser {
+    border: 1px solid var(--color5);
+}
+
+#tableRole td , #tableUser td,
+#tableRole th , #tableUser th{
+    padding: 1rem;
+}
+
+.roleName{
+    text-align: center;
+}
+
+/* form */
+
+.mainForm{
+    width: 80rem;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.mainField{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainField input , .mainField label{
+    flex-basis: 45%;
+    margin: 0.5rem;
+}
+
+.mainField button{
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+
+
+/* footer */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    margin: 2rem 0rem;
+}
