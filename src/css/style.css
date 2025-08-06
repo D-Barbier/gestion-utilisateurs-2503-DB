@@ -28,14 +28,27 @@ body{
 /* header */
 header{
     background-color: var(--color1);
-    height: 5rem;
     width: 100%;
+
 }
 
 header img{
     height: 5rem;
+    
 }
 
+.breadcrumbs{
+    list-style: none;
+    display: flex;
+    margin: 0rem;
+    padding: 1rem;
+    background-color: var(--color6);
+    
+}
+
+.breadcrumbs li{
+    margin-left: 1rem;
+}
 
 /* main */
 
@@ -160,9 +173,25 @@ footer{
     background-color: var(--color1);
 }
 
-footer p{
-    margin: auto;
+footer p, footer a{
     padding: 2rem;
     text-align: center;
     width: 50%;
+    margin: 0rem;
+}
+
+footer div{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--color3);
+}
+
+footer a:hover{
+    color: var(--color5);
 }
