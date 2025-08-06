@@ -14,7 +14,9 @@
     </header>
 
     <main>
-        <h1 class="mainTitle">Création d'un nouveau rôle</h1>
+        <div class="divTitle">
+            <h1 class="mainTitle">Création d'un nouveau rôle</h1>
+        </div>
 
         <form action="" class="mainForm">
             <fieldset class="mainField">
@@ -22,9 +24,9 @@
                 <label for="newRole">Nom de rôle</label>
                 <input type="text" id="newRole" title="Nom du nouveau rôle">
 
-                <label for="discribeRole">Déscription du rôle</label>
-                <input type="text" id="discribeRole" title="Description du nouveau role">
-
+                <label for="discribeRole">Description  du rôle</label>
+                <!-- <input type="text" id="discribeRole" title="Description du nouveau role"> -->
+                <textarea id="discribeRole" title="Description du nouveau role"></textarea>
                 <button type="submit">Ajouter</button>
                 <button type="reset">Réinitialiser</button>
             </fieldset>
