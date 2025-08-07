@@ -31,11 +31,38 @@ header{
     width: 100%;
 
 }
-
 header img{
     height: 5rem;
     
 }
+
+
+header .divHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigationBar {
+    display: flex;
+    padding: 0rem;
+}
+
+.navigationBar li{
+    list-style: none;
+   
+}
+
+.navigationBar a{
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigationBar a:hover{
+    color: var(--color5);
+}
+
+
+/* file d'ariane */
 
 .breadcrumbs{
     list-style: none;
