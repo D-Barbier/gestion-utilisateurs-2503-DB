@@ -26,6 +26,7 @@ body{
 }
 
 /* header */
+
 header{
     background-color: var(--color1);
     width: 100%;
@@ -41,6 +42,8 @@ header .divHeader{
     display: flex;
     justify-content: space-between;
 }
+
+/* barre de navigation */
 
 .navigationBar {
     display: flex;
@@ -82,7 +85,6 @@ header .divHeader{
 .divTitle{
    
     margin: auto;
-    width: 50%;
 }
 
 .mainTitle{
@@ -203,22 +205,89 @@ footer{
 footer p, footer a{
     padding: 2rem;
     text-align: center;
-    width: 50%;
     margin: 0rem;
 }
 
 footer div{
-    width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
-footer a{
+.terms{
     text-decoration: none;
     color: var(--color3);
 }
 
-footer a:hover{
+.terms:hover{
     color: var(--color5);
+}
+
+
+
+@media screen and (max-width : 960px)  {
+    
+    /*  menu */ 
+    .hamburger{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.6rem;
+        text-decoration: none;
+    }
+
+    .hamburger:hover{
+        color: var(--color5);
+        text-decoration: none;
+    }
+
+    /* barre de navigation */
+    .navigationBar{
+        display: none;
+    } 
+
+    .divHeader{
+        flex-direction: column;
+    }
+    header .navigationBar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    
+    .navigationBar li{
+      text-align: center;
+      margin: 0.5rem;
+    }
+
+    .navigationBar a:hover{
+       color: var(--color5);
+    }
+
+    /* main */
+
+    .divTitle h1{
+        font-size: 2rem;
+    }
+
+    /* footer */
+
+   
+
+}
+
+@media screen and (min-width : 961px ) and (max-width :1200px) {
+    
+    .hamburger{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width : 1201px) {
+    
+    .hamburger{
+        display: none;
+    }
+
 }
