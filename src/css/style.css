@@ -95,7 +95,8 @@ header .divHeader{
 /* table */
 
 #tableRole , #tableUser {
-    margin: 5rem auto;
+    margin: auto;
+    border-collapse: collapse;
 }
 
 #tableRole tr , #tableRole th , #tableRole td, #tableRole ,
@@ -108,8 +109,19 @@ header .divHeader{
     padding: 1rem;
 }
 
+#tableRole ul{
+    padding-left: 2rem;
+}
+#tableRole li{
+    padding: 0.5rem;
+}
+
 .roleName{
     text-align: center;
+}
+
+.scrollBar{
+    margin: 5rem;
 }
 
 /* form */
@@ -165,10 +177,10 @@ header .divHeader{
 /* Profil */ 
 
 #sectionProfil{
-    margin: 5rem auto;
-    width: 50%;
     background-color: var(--color2);
     border: 0.1rem solid var(--color7);
+    margin: 5rem auto;
+    width: 50%;
 }
 
 #divImgProfil{
@@ -189,34 +201,33 @@ header .divHeader{
 }
 
 #divPMail{
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
-
 
 /* footer */
 
 footer{
+    background-color: var(--color1);
     margin: auto;
     width: 100%;
-    background-color: var(--color1);
 }
 
 footer p, footer a{
+    margin: 0rem;
     padding: 2rem;
     text-align: center;
-    margin: 0rem;
 }
 
 footer div{
-    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
 }
 
 .terms{
-    text-decoration: none;
     color: var(--color3);
+    text-decoration: none;
 }
 
 .terms:hover{
@@ -230,10 +241,10 @@ footer div{
     /*  menu */ 
     .hamburger{
         position: absolute;
-        top: 0;
-        right: 0;
         padding: 1.6rem;
+        right: 0;
         text-decoration: none;
+        top: 0;
     }
 
     .hamburger:hover{
@@ -249,12 +260,12 @@ footer div{
     .divHeader{
         flex-direction: column;
     }
+
     header .navigationBar{
         flex-direction: column;
         gap: 1rem;
     }
 
-    
     .navigationBar li{
       text-align: center;
       margin: 0.5rem;
@@ -268,6 +279,12 @@ footer div{
 
     .divTitle h1{
         font-size: 2rem;
+    }
+
+    .scrollBar{
+        display: block;
+        overflow-x: auto;
+       
     }
 
     /* footer */
